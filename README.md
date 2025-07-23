@@ -1,2 +1,352 @@
-# vesenaovacila
-VÊ SE NÃO VACILA
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Fim da Vida Dupla - Salve Seu Relacionamento</title>
+    <style>
+        /* --- GERAL E FONTES --- */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* --- CONTAINER E SEÇÕES --- */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #fff;
+            margin-bottom: 25px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        /* --- TIPOGRAFIA --- */
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: #1a1a1a;
+            line-height: 1.2;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            font-weight: 900;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            font-weight: 400;
+            color: #555;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            font-size: 1.8em;
+            text-align: center;
+            border-bottom: 3px solid #f0c419;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        strong {
+            font-weight: 600;
+        }
+        
+        /* --- ELEMENTOS DE DESTAQUE --- */
+        .highlight {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-left: 5px solid #f0c419;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .highlight p {
+            margin: 0;
+            font-style: italic;
+            font-weight: 600;
+            font-size: 1.2em;
+            text-align: center;
+        }
+        
+        /* --- LISTAS (O QUE VOCÊ VAI APRENDER) --- */
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        .feature-list li {
+            font-size: 1.1em;
+            padding: 12px 0 12px 40px;
+            position: relative;
+            border-bottom: 1px dashed #ddd;
+        }
+        .feature-list li:before {
+            content: '✓';
+            color: #28a745;
+            font-weight: bold;
+            font-size: 1.5em;
+            position: absolute;
+            left: 0;
+            top: 10px;
+        }
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* --- BOTÃO DE CHAMADA PARA AÇÃO (CTA) --- */
+        .cta-button {
+            display: block;
+            width: 95%;
+            max-width: 500px;
+            margin: 30px auto;
+            background: linear-gradient(180deg, #2ecc71, #28a745);
+            color: #fff;
+            text-decoration: none;
+            padding: 20px 30px;
+            border-radius: 8px;
+            font-size: 1.5em;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: none;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(40, 167, 69, 0.5);
+        }
+        .cta-subtitle {
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+            margin-top: -20px;
+        }
+
+        /* --- BÔNUS --- */
+        .bonus-section {
+            background-color: #e9f5ff;
+            border: 2px dashed #007bff;
+        }
+        .bonus-item {
+            background: #fff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .bonus-item strong {
+            display: block;
+            font-size: 1.2em;
+            color: #0056b3;
+        }
+        .bonus-item span {
+            text-decoration: line-through;
+            color: #dc3545;
+        }
+        
+        /* --- PROVA SOCIAL (TESTEMUNHOS) --- */
+        .testimonial {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .testimonial p {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        .testimonial cite {
+            display: block;
+            text-align: right;
+            font-weight: bold;
+            color: #555;
+        }
+        
+        /* --- OFERTA E GARANTIA --- */
+        .offer-box {
+            background-color: #fff;
+            border: 3px solid #28a745;
+            padding: 30px;
+            text-align: center;
+        }
+        .price {
+            font-size: 3.5em;
+            font-weight: 900;
+            color: #28a745;
+            margin: 10px 0;
+        }
+        .price-details {
+            font-size: 1.2em;
+            color: #333;
+        }
+        .guarantee {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f1f1f1;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        .guarantee h3 {
+            font-size: 1.5em;
+            border: none;
+            margin: 0 0 10px 0;
+        }
+
+        /* --- FAQ --- */
+        .faq-item summary {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 15px;
+            cursor: pointer;
+            outline: none;
+            border-bottom: 1px solid #ddd;
+        }
+        .faq-item[open] summary {
+            background-color: #f1f1f1;
+        }
+        .faq-item div {
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+        
+        /* --- RESPONSIVIDADE --- */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2em; }
+            h2 { font-size: 1.3em; }
+            h3 { font-size: 1.6em; }
+            .container { padding: 10px; }
+            section { padding: 20px; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1>Sua Vida Secreta Está Custando Sua Paz.</h1>
+            <h2>Existe Uma Saída Para o Ciclo de Culpa e Mentiras, e Ela Começa Agora.</h2>
+        </header>
+
+        <section>
+            <h3>"Eu sei onde você está agora."</h3>
+            <p>Aquele calafrio na espinha toda vez que o celular vibra perto do seu parceiro(a). A necessidade de apagar mensagens, limpar o histórico e inventar desculpas que já se tornaram um segundo idioma para você.</p>
+            <p>O olhar no espelho e o pensamento: <em>"Por que eu continuo fazendo isso? Eu amo minha família, eu não sou uma pessoa ruim... mas eu não consigo parar."</em></p>
+            <p>Você vive com um nó constante no estômago. Uma mistura de adrenalina, seguida por uma onda avassaladora de culpa e ansiedade. Você sente que sua vida é uma <strong>bomba-relógio</strong>, e a cada dia que passa, você se pergunta se hoje será o dia em que tudo explode.</p>
+        </section>
+
+        <section class="highlight">
+            <p>Se Nada Mudar, o Final Dessa História Já Está Escrito.</p>
+        </section>
+        <p style="text-align: center;">A pergunta não é <strong>SE</strong> sua vida vai desmoronar, mas <strong>QUANDO</strong>.</p>
+        
+        <section>
+            <h3>E se Houvesse uma Maneira de Desarmar a Bomba e Retomar o Controle?</h3>
+            <p>E se você pudesse entender <strong>as verdadeiras razões</strong> por trás dos seus atos – que muitas vezes não são sobre sexo, mas sobre necessidades emocionais não atendidas que você nem sabia que existiam?</p>
+            <p>É por isso que eu criei o Ebook: <strong>"O Fim da Vida Dupla: O Guia Definitivo Para Parar de Trair e Salvar Seu Relacionamento".</strong></p>
+            <div style="background:#ddd; height:300px; margin:20px auto; display:flex; align-items:center; justify-content:center; border-radius:8px; color:#666; font-family:'Montserrat', sans-serif;">
+                [IMAGEM DA CAPA DO EBOOK AQUI]
+            </div>
+            <p>Este não é um livro de contos de fadas. É um <strong>manual de guerra</strong> para você lutar pela sua paz, pelo seu relacionamento e pela pessoa que você quer voltar a ser.</p>
+            <a href="#oferta" class="cta-button">SIM, QUERO ACABAR COM A ANGÚSTIA!</a>
+        </section>
+
+        <section>
+            <h3>Dentro Deste Guia Passo a Passo, Você Vai Descobrir:</h3>
+            <ul class="feature-list">
+                <li><strong>O Diagnóstico da Infidelidade:</strong> Descubra as 4 "raízes ocultas" que te levam a buscar fora o que falta dentro.</li>
+                <li><strong>O Método "Corta-Fogo":</strong> Uma técnica de 3 passos para neutralizar o desejo no momento exato em que ele surge.</li>
+                <li><strong>Comunicação que Desarma:</strong> Aprenda a comunicar suas verdadeiras necessidades sem conflitos.</li>
+                <li><strong>O Plano de Reconstrução da Confiança:</strong> O que fazer e o que NÃO fazer para reparar os danos.</li>
+                <li><strong>Blindando Seu Relacionamento:</strong> Estratégias práticas para reacender a conexão, a intimidade e a admiração.</li>
+                <li><strong>Como Lidar com o Deslize:</strong> Um mapa para navegar a crise se você já foi descoberto(a).</li>
+            </ul>
+        </section>
+
+        <section class="bonus-section">
+            <h3>Comprando AGORA, Você Leva 3 Bônus Exclusivos</h3>
+            <div class="bonus-item">
+                <strong>BÔNUS 1: Guia "Conversa Difícil"</strong>
+                <span>(Valor: R$ 47)</span> HOJE: GRÁTIS!
+            </div>
+            <div class="bonus-item">
+                <strong>BÔNUS 2: Checklist "Pontos de Fuga"</strong>
+                <span>(Valor: R$ 37)</span> HOJE: GRÁTIS!
+            </div>
+            <div class="bonus-item">
+                <strong>BÔNUS 3: Áudio "Resgatando a Paz Interior"</strong>
+                <span>(Valor: R$ 67)</span> HOJE: GRÁTIS!
+            </div>
+        </section>
+
+        <section>
+            <h3>Pessoas Reais, Resultados Reais</h3>
+            <div class="testimonial">
+                <p>"Eu achava que não tinha mais jeito. Este ebook me abriu os olhos para o PORQUÊ de eu fazer o que fazia. Pela primeira vez em anos, sinto que tenho o controle da minha vida de novo."</p>
+                <cite>– M.A., 42 anos</cite>
+            </div>
+            <div class="testimonial">
+                <p>"O medo de ser descoberto estava me matando. O guia me deu as ferramentas práticas para cortar o contato. Foi a melhor decisão que tomei. Salvei meu casamento e minha sanidade."</p>
+                <cite>– J.S., 35 anos</cite>
+            </div>
+        </section>
+
+        <section class="offer-box" id="oferta">
+            <h3>Qual o preço da sua paz e da sua família?</h3>
+            <p>Seu investimento total hoje para dar o primeiro passo e salvar tudo o que você construiu é de apenas:</p>
+            <p class="price-details">12x de R$ 9,74</p>
+            <p style="font-size:1.2em;">ou</p>
+            <div class="price">R$ 97,00</div>
+            <p class="price-details">à vista</p>
+            
+            <a href="#compra" class="cta-button">QUERO MEU ACESSO IMEDIATO AGORA!</a>
+            <p class="cta-subtitle">Compra 100% Segura e Discreta</p>
+            
+            <div class="guarantee">
+                <h3>GARANTIA DE RISCO ZERO</h3>
+                <p>Se em 7 dias você não sentir que encontrou um caminho claro para mudar, basta enviar um único e-mail e devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia. O risco é todo nosso.</p>
+            </div>
+        </section>
+
+        <section>
+            <h3>Perguntas Frequentes</h3>
+            <details class="faq-item">
+                <summary>Minha compra é sigilosa?</summary>
+                <div><p>Sim. A transação aparecerá de forma discreta na sua fatura, com o nome da plataforma de pagamento, não o nome do ebook. O acesso é enviado diretamente para o seu e-mail.</p></div>
+            </details>
+            <details class="faq-item">
+                <summary>E se o problema for meu parceiro(a)?</summary>
+                <div><p>Este guia foca no que VOCÊ pode controlar: suas ações. Ele te ajudará a entender suas motivações e a abordar os problemas da relação de forma saudável, em vez de usar a infidelidade como fuga.</p></div>
+            </details>
+            <details class="faq-item">
+                <summary>Vou ter resultados rápidos?</summary>
+                <div><p>Você sentirá um alívio e clareza imediatos ao entender o "porquê". A mudança é um processo, mas o ebook te dará ferramentas para ver progresso desde o primeiro dia de aplicação.</p></div>
+            </details>
+        </section>
+
+    </div>
+
+</body>
+</html>
